@@ -126,3 +126,91 @@ body > p {
     font-size: 2rem;
   }
 }
+
+/* ==========================
+   Accessibility Improvements
+   ========================== */
+
+body {
+  color: #212529;
+}
+
+/* Better keyboard accessibility */
+button:focus,
+input:focus {
+  outline: 3px solid #0068b5;
+  outline-offset: 2px;
+}
+
+/* ==========================
+   Three Column Section
+   ========================== */
+
+.features-section {
+  padding: 60px 20px;
+  background: white;
+}
+
+.features-section h2 {
+  color: #0068b5;
+  margin-top: 15px;
+}
+
+.features-section p {
+  line-height: 1.6;
+}
+
+.features-section i {
+  font-size: 3rem;
+}
+
+/* ==========================
+   Newsletter Form
+   ========================== */
+
+.newsletter-section {
+  padding: 60px 20px;
+}
+
+.newsletter-card {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.newsletter-card h2 {
+  color: #0068b5;
+  margin-bottom: 20px;
+}
+
+.newsletter-card label {
+  font-weight: bold;
+}
+
+.newsletter-card .btn-primary {
+  background-color: #0068b5;
+  border: none;
+}
+
+.newsletter-card .btn-primary:hover {
+  background-color: #004f8a;
+}
+
+/* ==========================
+   RTL Support
+   ========================== */
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .hero {
+  text-align: center;
+}
+
+[dir="rtl"] .timeline {
+  flex-direction: row-reverse;
+}
